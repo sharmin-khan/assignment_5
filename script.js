@@ -16,12 +16,18 @@ for (const button of completeBtn) {
       totalCount++;
       countTask.innerText = totalCount;
     }
+    let currentTime = new Date().toLocaleTimeString("en-US", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true,
+    });
 
     let title =
       event.target.parentNode.parentNode.querySelector(".title").textContent;
     const historyDiv = document.querySelector(".history_div");
     const div = document.createElement("div");
-    div.innerHTML = `<p class="text-gray-500">You have completed the task ${title} at 12:48:15 PM</p>`;
+    div.innerHTML = `<p class="text-gray-500">You have completed the task ${title} at ${currentTime}</p>`;
     historyDiv.appendChild(div);
     document
       .querySelector(".history_btn")
