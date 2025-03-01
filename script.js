@@ -1,7 +1,13 @@
 const completeBtn = document.querySelectorAll(".complete_btn");
+let count = 0;
 
 for (const button of completeBtn) {
   button.addEventListener("click", function (event) {
+    alert('Board updated successfully')
+    count++;
+    if(count === 6){
+      alert('Congrates!!! You have completed all the current task')
+    }
     event.target.setAttribute("disabled", "true");
     const taskCount = document.querySelector(".task_count");
     let taskAssigned = parseInt(taskCount.innerText);
@@ -54,3 +60,8 @@ let options = {
 let datePart = new Date().toLocaleDateString("en-US", options).replace(/,/, "");
 document.querySelector(".day").textContent = `${weekday},`;
 document.querySelector(".date").textContent = datePart;
+
+
+document.querySelector('.blog_btn').addEventListener('click', function(){
+  window.location.href = './blog.html';
+})

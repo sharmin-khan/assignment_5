@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <!-- Google Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+
+        .primary_color {
+            color: #00303C;
+        }
+    </style>
+</head>
+
+<body class="poppins-font primary_color bg-[#F4F7FF]">
+    <header class="container mx-auto py-6">
+        <div class="navbar bg-base-100 rounded-xl px-5">
+            <div class="navbar-start">
+                <div class="flex items-center justify-center space-x-2">
+                    <img src="./assets/logo.png" alt="">
+                    <h1 class="font-light text-3xl ">Dev<span class="font-bold">Board</span></h1>
+                </div>
+            </div>
+            <div class="navbar-end space-x-3">
+                <a class=" desk_btn btn bg-blue-600 text-white font-medium px-4 py-5 text-lg rounded-md">Back to
+                    Desk</a>
+            </div>
+        </div>
+    </header>
+    <h1 class="text-center text-3xl font-bold mb-6">Blogs</h1>
+    <div class="bg-white container mx-auto rounded-xl p-4 mb-4">
+        <h3 class="text-2xl font-semibold ">Question-1: What are the different ways to select an element in the DOM?
+        </h3> <br>
+        <p class="text-2xl"><span class="font-semibold">Answer :</span> Different ways to select an element in the DOM
+            are : <br>
+            1. getElementById() <br>
+            2. getElementsByClassName() <br>
+            3. getElementsByTagName() <br>
+            4. querySelector() <br>
+            5. querySelectorAll()
+        </p>
+    </div>
+    <div class="bg-white container mx-auto rounded-xl p-4 mb-4">
+        <h3 class="text-2xl font-semibold ">Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?</h3> <br>
+        <p class="text-2xl"><span class="font-semibold">Answer :</span> Difference between innerHTML, innerText, and
+            textContent are : <br>
+            🔹innerHTML → Gets or sets HTML content. <br>
+            🔹innerText → Gets or sets only visible text . <br>
+            🔹textContent → Gets or sets all text, including hidden text.
+        </p>
+    </div>
+    <div class="bg-white container mx-auto rounded-xl p-4 mb-4">
+        <h3 class="text-2xl font-semibold ">Question-3: What is event delegation in the DOM?</h3> <br>
+        <p class="text-2xl"><span class="font-semibold">Answer :</span> Event delegation is a technique where a single
+            event listener is added to a parent element instead of multiple child elements.
+            The event bubbles up from the child to the parent, allowing the parent to handle it.
+        </p>
+    </div>
+    <div class="bg-white container mx-auto rounded-xl p-4 mb-4">
+        <h3 class="text-2xl font-semibold ">Question-4: What is event bubbling in the DOM?</h3> <br>
+        <p class="text-2xl"><span class="font-semibold">Answer :</span> Event Bubbling is a behavior in the DOM where an
+            event starts from the target element and propagates up to its parent elements.
+        </p>
+    </div>
+    <div class="bg-white container mx-auto rounded-xl p-4 mb-4">
+        <h3 class="text-2xl font-semibold ">Question-5: How do you create, add, and remove elements using JavaScript?
+        </h3> <br>
+        <p class="text-2xl"><span class="font-semibold">Answer :</span> <br>
+            🔹 Create : document.createElement() <br>
+            🔹 Add : appendChild() <br>
+            🔹 Remove : removeChild()
+
+
+        </p>
+    </div>
+    <script>
+        document.querySelector('.desk_btn').addEventListener('click', function () {
+            window.location.href = './index.html'
+        })
+    </script>
+</body>
+
+</html>
