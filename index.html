@@ -36,7 +36,7 @@
             </div>
             <div class="navbar-end space-x-3">
                 <div> <a class="btn p-3 rounded-3xl"><img src="./assets/checkbox.png" alt=""> <span
-                            class="text-2xl pl-1">23</span></a>
+                            class="count_task text-2xl pl-1">23</span></a>
                 </div>
                 <a class="btn rounded-full"><img src="./assets/theme-btn.png" alt=""></a>
             </div>
@@ -46,16 +46,16 @@
     <section class="container mx-auto py-6 flex gap-4 rounded-lg">
 
         <!-- left side -->
-        <div class=" w-9/12 bg-white rounded-lg">
+        <div class=" w-9/12 bg-white rounded-lg pb-6">
 
             <!-- row div -->
             <div class="cards grid grid-cols-4 gap-6 px-5 py-6">
-                <div class="bg-[#F4F7FF] rounded-lg">
+                <div class=" bg-[#F4F7FF] rounded-lg">
                     <div class=" flex items-center space-x-3 p-4">
                         <img src="./assets/checkbox.png" alt="">
                         <div>
                             <p>Task Assigned</p>
-                            <h1 class="font-bold">05</h1>
+                            <h1 class="task_count font-bold">6</h1>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,8 @@
                             <br>
                             <span class="font-bold">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-800 text-white font-normal rounded-lg ">Completed</button>
+                        <button
+                            class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
@@ -111,7 +112,8 @@
                             <br>
                             <span class="font-bold">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-800 text-white font-normal rounded-lg ">Completed</button>
+                        <button
+                            class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
@@ -125,7 +127,8 @@
                             <br>
                             <span class="font-bold">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-800 text-white font-normal rounded-lg ">Completed</button>
+                        <button
+                            class=" complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
@@ -139,7 +142,8 @@
                             <br>
                             <span class="font-bold">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-800 text-white font-normal rounded-lg ">Completed</button>
+                        <button
+                            class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
@@ -153,7 +157,8 @@
                             <br>
                             <span class="font-bold">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-800 text-white font-normal rounded-lg ">Completed</button>
+                        <button
+                            class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80">Completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] space-y-4 rounded-lg p-4">
@@ -167,21 +172,21 @@
                             <br>
                             <span class="font-bold">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-800 text-white font-normal rounded-lg ">Completed</button>
+                        <button
+                            class="complete_btn bg-blue-700 text-white px-4 py-2 rounded-lg disabled:bg-blue-200 disabled:cursor-not-allowed disabled:opacity-80">Completed</button>
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- Activity log -->
         <!-- right side -->
-        <div class="w-3/12 bg-white rounded-lg ">
+        <div class="w-3/12 bg-white rounded-lg pb-6">
             <div class="flex items-center justify-center space-x-2 mt-6 mb-3">
                 <img src="./assets/activity.png" alt="">
                 <h3 class="font-bold">Activity Log</h3>
             </div>
             <div class="text-center mb-4">
-                <button class="btn bg-blue-800 text-white font-normal rounded-lg">Clear History</button>
+                <button class=" bg-blue-700 px-3 py-2 text-white font-normal rounded-lg">Clear History</button>
             </div>
             <div class="space-y-5 mx-4">
                 <p class="bg-[#F4F7FF] rounded-lg p-2">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
@@ -190,6 +195,8 @@
         </div>
 
     </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
