@@ -30,3 +30,21 @@ for (const button of completeBtn) {
       });
   });
 }
+
+document.getElementById("color_btn").addEventListener("click", function () {
+  const red = Math.floor(Math.random() * 255);
+  const green = Math.floor(Math.random() * 255);
+  const blue = Math.floor(Math.random() * 255);
+  document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+});
+
+new Date();
+let weekday = new Date().toLocaleDateString("en-US", { weekday: "short" });
+let options = {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+};
+let datePart = new Date().toLocaleDateString("en-US", options).replace(/,/, "");
+document.querySelector(".day").textContent = `${weekday},`;
+document.querySelector(".date").textContent = datePart;
