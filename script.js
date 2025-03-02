@@ -3,10 +3,10 @@ let count = 0;
 
 for (const button of completeBtn) {
   button.addEventListener("click", function (event) {
-    alert('Board updated successfully')
+    alert("Board updated successfully");
     count++;
-    if(count === 6){
-      alert('Congrates!!! You have completed all the current task')
+    if (count === 6) {
+      alert("Congrates!!! You have completed all the current task");
     }
     event.target.setAttribute("disabled", "true");
     const taskCount = document.querySelector(".task_count");
@@ -33,7 +33,7 @@ for (const button of completeBtn) {
       event.target.parentNode.parentNode.querySelector(".title").textContent;
     const historyDiv = document.querySelector(".history_div");
     const div = document.createElement("div");
-    div.innerHTML = `<p class="text-gray-500">You have completed the task ${title} at ${currentTime}</p>`;
+    div.innerHTML = `<p class="text-gray-800 bg-[#F4F7FF] rounded-lg p-4">You have completed the task ${title} at ${currentTime}</p>`;
     historyDiv.appendChild(div);
     document
       .querySelector(".history_btn")
@@ -61,7 +61,6 @@ let datePart = new Date().toLocaleDateString("en-US", options).replace(/,/, "");
 document.querySelector(".day").textContent = `${weekday},`;
 document.querySelector(".date").textContent = datePart;
 
-
-document.querySelector('.blog_btn').addEventListener('click', function(){
-  window.location.href = './blog.html';
-})
+document.querySelector(".blog_btn").addEventListener("click", function () {
+  window.location.href = "./blog.html";
+});
